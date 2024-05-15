@@ -1,226 +1,229 @@
- * {
-    margin: 0;
-    padding: 0;
-    color: gainsboro;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  color: gainsboro;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body{
-    background-image: url("/assets/background-page.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("/assets/background-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.boton-float{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+.boton-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
-.boton-float i{
-    font-size: 50px;
+
+.boton-float i {
+  font-size: 50px;
 }
+
 /* HEADER DE TODAS LAS PAGES */
-.contain-header{
-    background-image: linear-gradient(rgb(226, 0, 0), #470000);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contain-header {
+  background-image: linear-gradient(rgb(226, 0, 0), #470000);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* BARRA DE MENU DEL HEADER */
-.contain-menu ul{
-    display: flex;
-    list-style-type: none;
+.contain-menu ul {
+  display: flex;
+  list-style-type: none;
 }
-.list-menu li{
-    margin-right: 20px;
+
+.list-menu li {
+  margin-right: 20px;
 }
-.list-menu li, a{
-    text-decoration: none !important;  
-    color: gainsboro !important;
+
+.list-menu li, a {
+  text-decoration: none !important;
+  color: gainsboro !important;
 }
 
 /* FOOTER DE TODAS LAS PAGES */
-.contain-footer{
-    background-image: linear-gradient(rgb(226, 0, 0), #470000);
-    display: flex;
-    justify-content: space-between;
+.contain-footer {
+  background-image: linear-gradient(rgb(226, 0, 0), #470000);
+  display: flex;
+  justify-content: space-between;
 }
 
-.contain-footer ul, p{
-    list-style-type: none;
-    padding: 10px;
+.contain-footer ul, p {
+  list-style-type: none;
+  padding: 10px;
 }
+
 /* logos redes sociales */
-.contain-footer i{
-    font-size: 30px;
+.contain-footer i {
+  font-size: 30px;
 }
+
 /* RESPONSIVE INDEX */
-
 @media (min-width: 768px) {
-    .boton-float {
-        display: block; 
-    }
-
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-    }
+  .boton-float {
+    display: block;
+  }
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 767px) {
-    .section-instruments,
-    .section-marcas,
-    .section-bandas {
-        margin: 20px;
-    }
-
-    .list-marcas,
-    .list-bandas {
-        grid-template-columns: 1fr;
-    }
-
-    .items-marcas img,
-    .items-bandas img {
-        max-width: 100px;
-        height: auto;
-    }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100px;
+    height: auto;
+  }
 }
 /* MAIN DEL INDEX */
-.section-instruments{
-    margin: 30px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction:column;
+.section-instruments {
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.section-bandas{
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
-}
-.list-bandas{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.section-bandas {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
 }
 
-.section-marcas{
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
+.list-bandas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.list-marcas{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.section-marcas {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+.list-marcas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* MAIN DE SOMOS */
-.contain-texto-somos{
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
+.contain-texto-somos {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
 }
 
-.article-casa{
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
+.article-casa {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
 }
 
-.list-casa{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.list-casa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MAIN DE INSTRUMENTOS */
-.contain-main-instrumentos{
-    display:grid;
-    margin-top: 15px;
-    gap: 20px;
-    grid-template-areas: 
-    "tipos logos publicidad"
-    "tipos logos publicidad"
-    "tipos logos publicidad";
+.contain-main-instrumentos {
+  display: grid;
+  margin-top: 15px;
+  gap: 20px;
+  grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
 }
 
-.contain-tipos-instrumentos{
-    background-color: #470000ab;
-    padding: 10px;
-    grid-area: tipos;
-}
-.contain-logo-instrumentos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    gap: 15px;
-    grid-area: logos;
-}
-.contain-aside{
-    background-color: #470000ab;
-    margin-right: 5px;
-    grid-area: publicidad;
+.contain-tipos-instrumentos {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  padding: 10px;
+  grid-area: tipos;
 }
 
-.item-guitarra img:hover, .item-bateria img:hover, .item-bajo img:hover{
-    border-radius: 20px;
-    transition: transform 0.3s;
-    transform: scale(0.8);
-
+.contain-logo-instrumentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  grid-area: logos;
 }
 
-.btns-instrumentos{
-    text-align: center;
-    margin: 10px;
+.contain-aside {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  margin-right: 5px;
+  grid-area: publicidad;
+}
+
+.item-guitarra img:hover, .item-bateria img:hover, .item-bajo img:hover {
+  border-radius: 20px;
+  transition: transform 0.3s;
+  transform: scale(0.8);
+}
+
+.btns-instrumentos {
+  text-align: center;
+  margin: 10px;
 }
 
 /* MAIN DE CADA INSTRUMENTO */
-.contain-main-instrumentos-especifico{
-    display: grid;
-    grid-template-areas: 
-    "informacion cards cards"
-    "informacion cards cards"
-    "informacion cards cards";
-}
-.contain-informacion-instrumentos{
-    background-color: #470000ab;
-    padding: 10px;
-    margin-top: 20px;
-    grid: información;
+.contain-main-instrumentos-especifico {
+  display: grid;
+  grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
 }
 
-.contain-img-instrumentos{
-    display: grid;
-    margin: 20px;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    grid: card;
+.contain-informacion-instrumentos {
+  background-color: rgba(71, 0, 0, 0.6705882353);
+  padding: 10px;
+  margin-top: 20px;
+  grid: información;
 }
 
-.card-img-top{
-    height: 180px;
-    object-fit: contain;
-    box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.493);
+.contain-img-instrumentos {
+  display: grid;
+  margin: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid: card;
 }
 
-.card-body a{
-    background-color: #470000;
+.card-img-top {
+  height: 180px;
+  object-fit: contain;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.493);
 }
-.card-body .card-title, .card-text{
-    color: black;
+
+.card-body a {
+  background-color: #470000;
+}
+
+.card-body .card-title, .card-text {
+  color: black;
 }
 
 
 
 
+/*# sourceMappingURL=style.css.map */
