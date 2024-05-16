@@ -1,0 +1,34 @@
+@import '../componentes/variables';
+
+/* MAIN DEL INDEX */
+.section-instruments {
+    margin: 30px;
+    padding: $base-padding;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-bandas {
+    background-color: $brackground-color-secundary;
+    text-align: center;
+    padding: $section-padding;
+    margin: $large-margin;
+
+    .list-bandas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.section-marcas {
+    background-color: $brackground-color-secundary;
+    text-align: center;
+    padding: $section-padding;
+    margin: $large-margin;
+
+    .list-marcas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

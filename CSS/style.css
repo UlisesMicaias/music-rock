@@ -1,28 +1,26 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  color: gainsboro;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  background-image: url("/assets/background-page.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .boton-float {
   position: fixed;
   right: 20px;
   bottom: 20px;
 }
-
 .boton-float i {
   font-size: 50px;
+}
+
+/* FOOTER DE TODAS LAS PAGES */
+.contain-footer {
+  background-image: linear-gradient(rgb(226, 0, 0), #470000);
+  display: flex;
+  justify-content: space-between;
+}
+.contain-footer ul,
+.contain-footer p {
+  list-style-type: none;
+  padding: 10px;
+}
+.contain-footer i {
+  font-size: 30px;
 }
 
 /* HEADER DE TODAS LAS PAGES */
@@ -43,55 +41,12 @@ body {
 .list-menu li {
   margin-right: 20px;
 }
-
-.list-menu li, a {
+.list-menu li,
+.list-menu a {
   text-decoration: none !important;
   color: gainsboro !important;
 }
 
-/* FOOTER DE TODAS LAS PAGES */
-.contain-footer {
-  background-image: linear-gradient(rgb(226, 0, 0), #470000);
-  display: flex;
-  justify-content: space-between;
-}
-
-.contain-footer ul, p {
-  list-style-type: none;
-  padding: 10px;
-}
-
-/* logos redes sociales */
-.contain-footer i {
-  font-size: 30px;
-}
-
-/* RESPONSIVE INDEX */
-@media (min-width: 768px) {
-  .boton-float {
-    display: block;
-  }
-  .carousel-item img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 767px) {
-  .section-instruments,
-  .section-marcas,
-  .section-bandas {
-    margin: 20px;
-  }
-  .list-marcas,
-  .list-bandas {
-    grid-template-columns: 1fr;
-  }
-  .items-marcas img,
-  .items-bandas img {
-    max-width: 100px;
-    height: auto;
-  }
-}
 /* MAIN DEL INDEX */
 .section-instruments {
   margin: 30px;
@@ -102,39 +57,99 @@ body {
 }
 
 .section-bandas {
-  background-color: rgba(71, 0, 0, 0.6705882353);
+  background-color: rgba(71, 0, 0, 0.8352941176);
   text-align: center;
   padding: 20px;
   margin: 50px;
 }
-
-.list-bandas {
+.section-bandas .list-bandas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .section-marcas {
-  background-color: rgba(71, 0, 0, 0.6705882353);
+  background-color: rgba(71, 0, 0, 0.8352941176);
   text-align: center;
   padding: 20px;
   margin: 50px;
 }
-
-.list-marcas {
+.section-marcas .list-marcas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* MAIN DE SOMOS */
-.contain-texto-somos {
-  background-color: rgba(71, 0, 0, 0.6705882353);
+/* MAIN DE INSTRUMENTOS */
+.contain-main-instrumentos {
+  display: grid;
+  margin-top: 15px;
+  gap: 20px;
+  grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
+}
+.contain-main-instrumentos .contain-tipos-instrumentos {
+  background-color: rgba(71, 0, 0, 0.8352941176);
+  padding: 10px;
+  grid-area: tipos;
+}
+.contain-main-instrumentos .contain-logo-instrumentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  grid-area: logos;
+}
+.contain-main-instrumentos .contain-aside {
+  background-color: rgba(71, 0, 0, 0.8352941176);
+  margin-right: 5px;
+  grid-area: publicidad;
+}
+.contain-main-instrumentos .item-guitarra img:hover,
+.contain-main-instrumentos .item-bateria img:hover,
+.contain-main-instrumentos .item-bajo img:hover {
+  border-radius: 20px;
+  transition: transform 0.3s;
+  transform: scale(0.8);
+}
+.contain-main-instrumentos .btns-instrumentos {
   text-align: center;
-  padding: 20px;
-  margin: 50px;
+  margin: 20px;
 }
 
+/* MAIN DE CADA INSTRUMENTO */
+.contain-main-instrumentos-especifico {
+  display: grid;
+  grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
+}
+.contain-main-instrumentos-especifico .contain-informacion-instrumentos {
+  background-color: rgba(71, 0, 0, 0.8352941176);
+  padding: 10px;
+  margin-top: 20px;
+  grid-area: información;
+}
+.contain-main-instrumentos-especifico .contain-img-instrumentos {
+  display: grid;
+  margin: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: card;
+}
+.contain-main-instrumentos-especifico .contain-img-instrumentos .card-img-top {
+  height: 180px;
+  object-fit: contain;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+}
+.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body a {
+  background-color: #470000;
+}
+.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-title,
+.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-text {
+  color: black;
+}
+
+/* MAIN DE SOMOS */
+.contain-texto-somos,
 .article-casa {
-  background-color: rgba(71, 0, 0, 0.6705882353);
+  background-color: rgba(71, 0, 0, 0.8352941176);
   text-align: center;
   padding: 20px;
   margin: 50px;
@@ -148,82 +163,20 @@ body {
   align-items: center;
 }
 
-/* MAIN DE INSTRUMENTOS */
-.contain-main-instrumentos {
-  display: grid;
-  margin-top: 15px;
-  gap: 20px;
-  grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
+* {
+  margin: 0;
+  padding: 0;
+  color: gainsboro;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.contain-tipos-instrumentos {
-  background-color: rgba(71, 0, 0, 0.6705882353);
-  padding: 10px;
-  grid-area: tipos;
+body {
+  background-image: url("../assets/background-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
-.contain-logo-instrumentos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  gap: 15px;
-  grid-area: logos;
-}
-
-.contain-aside {
-  background-color: rgba(71, 0, 0, 0.6705882353);
-  margin-right: 5px;
-  grid-area: publicidad;
-}
-
-.item-guitarra img:hover, .item-bateria img:hover, .item-bajo img:hover {
-  border-radius: 20px;
-  transition: transform 0.3s;
-  transform: scale(0.8);
-}
-
-.btns-instrumentos {
-  text-align: center;
-  margin: 10px;
-}
-
-/* MAIN DE CADA INSTRUMENTO */
-.contain-main-instrumentos-especifico {
-  display: grid;
-  grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
-}
-
-.contain-informacion-instrumentos {
-  background-color: rgba(71, 0, 0, 0.6705882353);
-  padding: 10px;
-  margin-top: 20px;
-  grid: información;
-}
-
-.contain-img-instrumentos {
-  display: grid;
-  margin: 20px;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid: card;
-}
-
-.card-img-top {
-  height: 180px;
-  object-fit: contain;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.493);
-}
-
-.card-body a {
-  background-color: #470000;
-}
-
-.card-body .card-title, .card-text {
-  color: black;
-}
-
-
-
 
 /*# sourceMappingURL=style.css.map */

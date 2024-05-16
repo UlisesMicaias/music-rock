@@ -1,0 +1,30 @@
+@import '_variables';
+
+/* HEADER DE TODAS LAS PAGES */
+.contain-header {
+    background-image: $background-gradient;
+    padding: $header-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BARRA DE MENU DEL HEADER */
+.contain-menu {
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+.list-menu {
+    li {
+        margin-right: $base-margin;
+    }
+
+    li,
+    a {
+        text-decoration: none !important;
+        color: $links-color !important;
+    }
+}

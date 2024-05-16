@@ -1,0 +1,18 @@
+@import '../componentes/variables';
+
+/* MAIN DE SOMOS */
+.contain-texto-somos,
+.article-casa {
+    background-color: $brackground-color-secundary;
+    text-align: center;
+    padding: $section-padding;
+    margin: $large-margin;
+}
+
+.list-casa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $base-margin;
+    justify-content: center;
+    align-items: center;
+}

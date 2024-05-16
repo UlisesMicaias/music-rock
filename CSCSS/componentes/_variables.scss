@@ -1,0 +1,33 @@
+//colores del background, texto, background btns y link
+$color-primary: rgb(226, 0, 0);
+$color-secundary: #470000;
+$brackground-color-secundary: #470000d5;
+$text-color: gainsboro;
+$links-color: gainsboro;
+$links-hover-color: gainsboro;
+$icon-color: gainsboro;
+$btn-background-color: #470000;
+
+//fuentes
+$font-text: "Bebas Neue", sans-serif;
+$font-weight-text: 400;
+$font-style-text: normal;
+
+// Variables de tamaños de fuentes
+$base-font-size: 16px;
+$icon-font-size: 30px;
+$large-icon-font-size: 50px;
+$header-font-size: 20px;
+
+//margin y padding
+$base-margin: 20px;
+$large-margin: 50px;
+$base-padding: 10px;
+$header-padding: 15px;
+$footer-padding: 10px;
+$section-padding: 20px;
+
+// background de todas las pages ya sea footer, header y fondo de pagina
+$background-image-url: url("../assets/background-page.jpg");
+$background-gradient: linear-gradient($color-primary, $color-secundary);
+

@@ -1,0 +1,18 @@
+@import '_variables';
+
+/* FOOTER DE TODAS LAS PAGES */
+.contain-footer {
+    background-image: $background-gradient;
+    display: flex;
+    justify-content: space-between;
+
+    ul,
+    p {
+        list-style-type: none;
+        padding: $footer-padding;
+    }
+
+    i {
+        font-size: $icon-font-size;
+    }
+}

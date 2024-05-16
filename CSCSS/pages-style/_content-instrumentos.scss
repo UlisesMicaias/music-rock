@@ -1,0 +1,87 @@
+@import '../componentes/variables';
+
+/* MAIN DE INSTRUMENTOS */
+.contain-main-instrumentos {
+    display: grid;
+    margin-top: 15px;
+    gap: $base-margin;
+    grid-template-areas:
+        "tipos logos publicidad"
+        "tipos logos publicidad"
+        "tipos logos publicidad";
+
+    .contain-tipos-instrumentos {
+        background-color: $brackground-color-secundary;
+        padding: $base-padding;
+        grid-area: tipos;
+    }
+
+    .contain-logo-instrumentos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+        grid-area: logos;
+    }
+
+    .contain-aside {
+        background-color: $brackground-color-secundary;
+        margin-right: 5px;
+        grid-area: publicidad;
+    }
+
+    .item-guitarra img:hover,
+    .item-bateria img:hover,
+    .item-bajo img:hover {
+        border-radius: 20px;
+        transition: transform 0.3s;
+        transform: scale(0.8);
+    }
+
+    .btns-instrumentos {
+        text-align: center;
+        margin: $base-margin;
+    }
+}
+
+/* MAIN DE CADA INSTRUMENTO */
+.contain-main-instrumentos-especifico {
+    display: grid;
+    grid-template-areas:
+        "informacion cards cards"
+        "informacion cards cards"
+        "informacion cards cards";
+
+    .contain-informacion-instrumentos {
+        background-color: $brackground-color-secundary;
+        padding: $base-padding;
+        margin-top: 20px;
+        grid-area: información;
+    }
+
+    .contain-img-instrumentos {
+        display: grid;
+        margin: $base-margin;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: card;
+
+        .card-img-top {
+            height: 180px;
+            object-fit: contain;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+        }
+
+        .card-body {
+            a {
+                background-color: $btn-background-color;
+            }
+
+            .card-title,
+            .card-text {
+                color: black;
+            }
+        }
+    }
+}

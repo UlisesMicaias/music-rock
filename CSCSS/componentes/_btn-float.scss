@@ -1,0 +1,11 @@
+@import '_variables';
+
+.boton-float {
+    position: fixed;
+    right: $base-margin;
+    bottom: $base-margin;
+
+    i {
+        font-size: $large-icon-font-size;
+    }
+}

@@ -1,238 +1,249 @@
+// componentes de todas las paginas
+@import './componentes/variables';
+@import './componentes/btn-float';
+@import './componentes/footer';
+@import './componentes/header';
+
+// estilos de cada contenido de pag
+@import './pages-style/conten-index';
+@import './pages-style/content-instrumentos';
+@import './pages-style/content-somos';
+
 * {
     margin: 0;
     padding: 0;
-    color: gainsboro;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: $text-color;
+    font-family: $font-text;
+    font-weight: $font-weight-text;
+    font-style: $font-style-text;
 }
 
 body {
-    background-image: url("/assets/background-page.jpg");
+    background-image: $background-image-url;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.boton-float {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+// .boton-float {
+//     position: fixed;
+//     right: $base-margin;
+//     bottom: $base-margin;
 
-    i {
-        font-size: 50px;
-    }
-}
+//     i {
+//         font-size: $large-icon-font-size;
+//     }
+// }
 
-/* HEADER DE TODAS LAS PAGES */
-.contain-header {
-    background-image: linear-gradient(rgb(226, 0, 0), #470000);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+// /* HEADER DE TODAS LAS PAGES */
+// .contain-header {
+//     background-image: $background-gradient;
+//     padding: $header-padding;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
 
-/* BARRA DE MENU DEL HEADER */
-.contain-menu {
-    ul {
-        display: flex;
-        list-style-type: none;
-    }
-}
+// /* BARRA DE MENU DEL HEADER */
+// .contain-menu {
+//     ul {
+//         display: flex;
+//         list-style-type: none;
+//     }
+// }
 
-.list-menu {
-    li {
-        margin-right: 20px;
-    }
+// .list-menu {
+//     li {
+//         margin-right: $base-margin;
+//     }
 
-    li,
-    a {
-        text-decoration: none !important;
-        color: gainsboro !important;
-    }
-}
+//     li,
+//     a {
+//         text-decoration: none !important;
+//         color: $links-color !important;
+//     }
+// }
 
-/* FOOTER DE TODAS LAS PAGES */
-.contain-footer {
-    background-image: linear-gradient(rgb(226, 0, 0), #470000);
-    display: flex;
-    justify-content: space-between;
+// /* FOOTER DE TODAS LAS PAGES */
+// .contain-footer {
+//     background-image: $background-gradient;
+//     display: flex;
+//     justify-content: space-between;
 
-    ul,
-    p {
-        list-style-type: none;
-        padding: 10px;
-    }
+//     ul,
+//     p {
+//         list-style-type: none;
+//         padding: $footer-padding;
+//     }
+    
+//     i {
+//         font-size: $icon-font-size;
+//     }
+// }
 
-    i {
-        font-size: 30px;
-    }
-}
+// /* RESPONSIVE INDEX */
+// @media (min-width: 768px) {
+//     .boton-float {
+//         display: block;
+//     }
 
-/* RESPONSIVE INDEX */
-@media (min-width: 768px) {
-    .boton-float {
-        display: block;
-    }
+//     .carousel-item img {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
 
-    .carousel-item img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+// @media (max-width: 767px) {
+//     .section-instruments,
+//     .section-marcas,
+//     .section-bandas {
+//         margin: $base-margin;
+//     }
 
-@media (max-width: 767px) {
-    .section-instruments,
-    .section-marcas,
-    .section-bandas {
-        margin: 20px;
-    }
+//     .list-marcas,
+//     .list-bandas {
+//         grid-template-columns: 1fr;
+//     }
 
-    .list-marcas,
-    .list-bandas {
-        grid-template-columns: 1fr;
-    }
+//     .items-marcas img,
+//     .items-bandas img {
+//         max-width: 100px;
+//         height: auto;
+//     }
+// }
 
-    .items-marcas img,
-    .items-bandas img {
-        max-width: 100px;
-        height: auto;
-    }
-}
+// /* MAIN DEL INDEX */
+// .section-instruments {
+//     margin: 30px;
+//     padding: $base-padding;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+// }
 
-/* MAIN DEL INDEX */
-.section-instruments {
-    margin: 30px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+// .section-bandas {
+//     background-color: $brackground-color-secundary;
+//     text-align: center;
+//     padding: $section-padding;
+//     margin: $large-margin;
 
-.section-bandas {
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
+//     .list-bandas {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
 
-    .list-bandas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+// .section-marcas {
+//     background-color: $brackground-color-secundary;
+//     text-align: center;
+//     padding: $section-padding;
+//     margin: $large-margin;
+    
+//     .list-marcas {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
 
-.section-marcas {
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
+// /* MAIN DE SOMOS */
+// .contain-texto-somos,
+// .article-casa {
+//     background-color: $brackground-color-secundary;
+//     text-align: center;
+//     padding: $section-padding;
+//     margin: $large-margin;
+// }
 
-    .list-marcas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+// .list-casa {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: $base-margin;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-/* MAIN DE SOMOS */
-.contain-texto-somos,
-.article-casa {
-    background-color: #470000ab;
-    text-align: center;
-    padding: 20px;
-    margin: 50px;
-    }
+// /* MAIN DE INSTRUMENTOS */
+// .contain-main-instrumentos {
+//     display: grid;
+//     margin-top: 15px;
+//     gap: $base-margin;
+//     grid-template-areas:
+//         "tipos logos publicidad"
+//         "tipos logos publicidad"
+//         "tipos logos publicidad";
 
-.list-casa {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
+//     .contain-tipos-instrumentos {
+//         background-color: $brackground-color-secundary;
+//         padding: $base-padding;
+//         grid-area: tipos;
+//     }
 
-/* MAIN DE INSTRUMENTOS */
-.contain-main-instrumentos {
-    display: grid;
-    margin-top: 15px;
-    gap: 20px;
-    grid-template-areas:
-        "tipos logos publicidad"
-        "tipos logos publicidad"
-        "tipos logos publicidad";
+//     .contain-logo-instrumentos {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 15px;
+//         gap: 15px;
+//         grid-area: logos;
+//     }
 
-    .contain-tipos-instrumentos {
-        background-color: #470000ab;
-        padding: 10px;
-        grid-area: tipos;
-    }
+//     .contain-aside {
+//         background-color: $brackground-color-secundary;
+//         margin-right: 5px;
+//         grid-area: publicidad;
+//     }
 
-    .contain-logo-instrumentos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        gap: 15px;
-        grid-area: logos;
-    }
+//     .item-guitarra img:hover,
+//     .item-bateria img:hover,
+//     .item-bajo img:hover {
+//         border-radius: 20px;
+//         transition: transform 0.3s;
+//         transform: scale(0.8);
+//     }
 
-    .contain-aside {
-        background-color: #470000ab;
-        margin-right: 5px;
-        grid-area: publicidad;
-    }
+//     .btns-instrumentos {
+//         text-align: center;
+//         margin: $base-margin;
+//     }
+// }
 
-    .item-guitarra img:hover,
-    .item-bateria img:hover,
-    .item-bajo img:hover {
-        border-radius: 20px;
-        transition: transform 0.3s;
-        transform: scale(0.8);
-    }
+// /* MAIN DE CADA INSTRUMENTO */
+// .contain-main-instrumentos-especifico {
+//     display: grid;
+//     grid-template-areas:
+//         "informacion cards cards"
+//         "informacion cards cards"
+//         "informacion cards cards";
 
-    .btns-instrumentos {
-        text-align: center;
-        margin: 10px;
-    }
-}
+//     .contain-informacion-instrumentos {
+//         background-color: $brackground-color-secundary;
+//         padding: $base-padding;
+//         margin-top: 20px;
+//         grid-area: información;
+//     }
 
-/* MAIN DE CADA INSTRUMENTO */
-.contain-main-instrumentos-especifico {
-    display: grid;
-    grid-template-areas:
-        "informacion cards cards"
-        "informacion cards cards"
-        "informacion cards cards";
+//     .contain-img-instrumentos {
+//         display: grid;
+//         margin: $base-margin;
+//         gap: 30px;
+//         grid-template-columns: repeat(3, 1fr);
+//         grid-area: card;
 
-    .contain-informacion-instrumentos {
-        background-color: #470000ab;
-        padding: 10px;
-        margin-top: 20px;
-        grid-area: información;
-    }
+//         .card-img-top {
+//             height: 180px;
+//             object-fit: contain;
+//             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+//         }
 
-    .contain-img-instrumentos {
-        display: grid;
-        margin: 20px;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-area: card;
+//         .card-body {
+//             a {
+//                 background-color: $btn-background-color;
+//             }
 
-        .card-img-top {
-        height: 180px;
-        object-fit: contain;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
-        }
-
-        .card-body {
-        a {
-            background-color: #470000;
-        }
-
-        .card-title,
-        .card-text {
-            color: black;
-        }
-        }
-    }
-}
+//             .card-title,
+//             .card-text {
+//                 color: black;
+//             }
+//         }
+//     }
+// }
