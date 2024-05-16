@@ -1,0 +1,17 @@
+// base de todas las paginas
+@import './primary/variables';
+@import './primary/mixins';
+@import './primary/reseteo';
+
+// componentes de todas las paginas
+@import './componentes/btn-float';
+@import './componentes/footer';
+@import'./componentes/header';
+
+// estilos de cada contenido de pag
+@import './pages-style/content-index';
+@import './pages-style/content-instrumentos';
+@import './pages-style/content-somos';
+
+// mediaqueries para las paginas responsive
+@import './_media-queries.scss/queries-index';

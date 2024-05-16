@@ -1,10 +1,25 @@
-@charset "UTF-8";
-.boton-float {
+* {
+  margin: 0;
+  padding: 0;
+  color: gainsboro;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: url("../assets/background-page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn-float {
   position: fixed;
   right: 20px;
   bottom: 20px;
 }
-.boton-float i {
+.btn-float i {
   font-size: 50px;
 }
 
@@ -12,6 +27,8 @@
 .contain-footer {
   background-image: linear-gradient(rgb(226, 0, 0), #470000);
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 .contain-footer ul,
@@ -83,6 +100,8 @@
   display: grid;
   margin-top: 15px;
   gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
 }
 .contain-main-instrumentos .contain-tipos-instrumentos {
@@ -114,24 +133,29 @@
   text-align: center;
   margin: 20px;
 }
+.contain-main-instrumentos .btns-instrumentos a {
+  text-decoration: none;
+  color: gainsboro;
+}
 
 /* MAIN DE CADA INSTRUMENTO */
 .contain-main-instrumentos-especifico {
   display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
 }
 .contain-main-instrumentos-especifico .contain-informacion-instrumentos {
   background-color: rgba(71, 0, 0, 0.8352941176);
   padding: 10px;
   margin-top: 20px;
-  grid-area: información;
+  grid-area: informacion;
 }
 .contain-main-instrumentos-especifico .contain-img-instrumentos {
   display: grid;
   margin: 20px;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-area: card;
+  grid-area: cards;
 }
 .contain-main-instrumentos-especifico .contain-img-instrumentos .card-img-top {
   height: 180px;
@@ -140,6 +164,12 @@
 }
 .contain-main-instrumentos-especifico .contain-img-instrumentos .card-body a {
   background-color: #470000;
+  text-decoration: none;
+  color: gainsboro;
+}
+.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body a:hover {
+  background-color: #140000;
+  text-decoration: none;
 }
 .contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-title,
 .contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-text {
@@ -163,20 +193,31 @@
   align-items: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  color: gainsboro;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* RESPONSIVE INDEX */
+@media (min-width: 768px) {
+  .boton-float {
+    display: block;
+  }
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
-body {
-  background-image: url("../assets/background-page.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+@media (max-width: 767px) {
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

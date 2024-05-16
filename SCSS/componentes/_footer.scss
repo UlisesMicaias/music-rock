@@ -1,9 +1,10 @@
-@import '_variables';
+@import '../primary/variables';
+@import '../primary/mixins';
 
 /* FOOTER DE TODAS LAS PAGES */
 .contain-footer {
     background-image: $background-gradient;
-    display: flex;
+    @include flex-center;
     justify-content: space-between;
 
     ul,

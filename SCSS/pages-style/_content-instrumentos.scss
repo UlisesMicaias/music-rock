@@ -1,10 +1,13 @@
-@import '../componentes/variables';
+@import '../primary/variables';
+@import '../primary/mixins';
 
 /* MAIN DE INSTRUMENTOS */
 .contain-main-instrumentos {
     display: grid;
     margin-top: 15px;
     gap: $base-margin;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: auto auto auto; 
     grid-template-areas:
         "tipos logos publicidad"
         "tipos logos publicidad"
@@ -34,20 +37,24 @@
     .item-guitarra img:hover,
     .item-bateria img:hover,
     .item-bajo img:hover {
-        border-radius: 20px;
-        transition: transform 0.3s;
-        transform: scale(0.8);
+        @include transform-instruments;
     }
 
     .btns-instrumentos {
         text-align: center;
         margin: $base-margin;
+
+        a {
+            text-decoration: none;
+            color: $text-color; 
+        }
     }
 }
 
 /* MAIN DE CADA INSTRUMENTO */
 .contain-main-instrumentos-especifico {
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
         "informacion cards cards"
         "informacion cards cards"
@@ -57,7 +64,7 @@
         background-color: $brackground-color-secundary;
         padding: $base-padding;
         margin-top: 20px;
-        grid-area: información;
+        grid-area: informacion;
     }
 
     .contain-img-instrumentos {
@@ -65,7 +72,7 @@
         margin: $base-margin;
         gap: 30px;
         grid-template-columns: repeat(3, 1fr);
-        grid-area: card;
+        grid-area: cards;
 
         .card-img-top {
             height: 180px;
@@ -76,6 +83,13 @@
         .card-body {
             a {
                 background-color: $btn-background-color;
+                text-decoration: none;
+                color: $text-color; 
+
+                &:hover {
+                    background-color: darken($btn-background-color, 10%);
+                    text-decoration: none; 
+                }
             }
 
             .card-title,
@@ -85,3 +99,6 @@
         }
     }
 }
+
+
+

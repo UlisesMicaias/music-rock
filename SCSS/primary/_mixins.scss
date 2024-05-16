@@ -1,0 +1,17 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  @mixin responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  @mixin transform-instruments{
+    border-radius: 20px;
+    transition: transform 0.3s;
+    transform: scale(0.8);
+}
+  

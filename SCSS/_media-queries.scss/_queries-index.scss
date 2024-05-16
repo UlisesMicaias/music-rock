@@ -1,0 +1,31 @@
+@import '../primary/variables';
+@import '../primary/mixins';
+
+/* RESPONSIVE INDEX */
+@media (min-width: 768px) {
+    .boton-float {
+        display: block;
+    }
+
+    .carousel-item img {
+        @include responsive-img;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}

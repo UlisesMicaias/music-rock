@@ -1,6 +1,6 @@
-@import '_variables';
+@import '../primary/variables';
 
-.boton-float {
+.btn-float {
     position: fixed;
     right: $base-margin;
     bottom: $base-margin;

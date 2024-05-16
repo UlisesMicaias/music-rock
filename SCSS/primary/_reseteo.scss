@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    font-family: $font-text;
+    font-weight: $font-weight-text;
+    font-style: $font-style-text;
+}
+
+body {
+    background-image: $background-image-url;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
