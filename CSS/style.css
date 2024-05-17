@@ -193,6 +193,38 @@ body {
   align-items: center;
 }
 
+.contain-main-instrumentos-comprados {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.contain-main-instrumentos-comprados .card-img-top {
+  height: 180px;
+  object-fit: contain;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+}
+.contain-main-instrumentos-comprados .card-body a {
+  background-color: #470000;
+  text-decoration: none;
+  color: gainsboro;
+}
+.contain-main-instrumentos-comprados .card-body a:hover {
+  background-color: #140000;
+  text-decoration: none;
+}
+.contain-main-instrumentos-comprados .card-body .card-title,
+.contain-main-instrumentos-comprados .card-body .card-text {
+  color: black;
+}
+
+.title-compra {
+  margin: 20px;
+}
+
+.contain-compra-total {
+  margin: 20px;
+}
+
 /* RESPONSIVE INDEX */
 @media (min-width: 768px) {
   .boton-float {

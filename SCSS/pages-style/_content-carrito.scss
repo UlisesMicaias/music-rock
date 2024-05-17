@@ -1,0 +1,39 @@
+@import'../primary/variables';
+
+.contain-main-instrumentos-comprados{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    .card-img-top {
+        height: 180px;
+        object-fit: contain;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+    }
+
+    .card-body {
+        a {
+            background-color: $btn-background-color;
+            text-decoration: none;
+            color: $text-color; 
+
+            &:hover {
+                background-color: darken($btn-background-color, 10%);
+                text-decoration: none; 
+            }
+        }
+
+        .card-title,
+        .card-text {
+            color: black;
+        }
+    }
+
+}
+
+.title-compra{
+    margin: $base-margin;
+}
+
+.contain-compra-total{
+    margin: $base-margin;      
+}
