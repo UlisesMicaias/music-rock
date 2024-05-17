@@ -74,7 +74,7 @@ body {
 }
 
 .section-bandas {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   text-align: center;
   padding: 20px;
   margin: 50px;
@@ -85,7 +85,7 @@ body {
 }
 
 .section-marcas {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   text-align: center;
   padding: 20px;
   margin: 50px;
@@ -105,7 +105,7 @@ body {
   grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
 }
 .contain-main-instrumentos .contain-tipos-instrumentos {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   padding: 10px;
   grid-area: tipos;
 }
@@ -118,7 +118,7 @@ body {
   grid-area: logos;
 }
 .contain-main-instrumentos .contain-aside {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   margin-right: 5px;
   grid-area: publicidad;
 }
@@ -145,7 +145,7 @@ body {
   grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
 }
 .contain-main-instrumentos-especifico .contain-informacion-instrumentos {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   padding: 10px;
   margin-top: 20px;
   grid-area: informacion;
@@ -179,7 +179,7 @@ body {
 /* MAIN DE SOMOS */
 .contain-texto-somos,
 .article-casa {
-  background-color: rgba(71, 0, 0, 0.8352941176);
+  background-color: #470000;
   text-align: center;
   padding: 20px;
   margin: 50px;
@@ -218,6 +218,21 @@ body {
     max-width: 100%;
     height: auto;
   }
+}
+.contain-menu ul.list-menu li:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.logo-page h1 {
+  animation: flipInY 1s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

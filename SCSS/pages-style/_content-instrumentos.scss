@@ -14,7 +14,7 @@
         "tipos logos publicidad";
 
     .contain-tipos-instrumentos {
-        background-color: $brackground-color-secundary;
+        background-color: $color-secundary;
         padding: $base-padding;
         grid-area: tipos;
     }
@@ -29,7 +29,7 @@
     }
 
     .contain-aside {
-        background-color: $brackground-color-secundary;
+        background-color: $color-secundary;
         margin-right: 5px;
         grid-area: publicidad;
     }
@@ -61,7 +61,7 @@
         "informacion cards cards";
 
     .contain-informacion-instrumentos {
-        background-color: $brackground-color-secundary;
+        background-color: $color-secundary;
         padding: $base-padding;
         margin-top: 20px;
         grid-area: informacion;

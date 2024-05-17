@@ -1,0 +1,26 @@
+.contain-menu {
+    ul.list-menu {
+        li {
+            &:hover {
+                animation: bounce 1s ;
+            }
+        }
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+// cada que se recargue la pag gira el logo
+.logo-page {
+    h1 {
+        animation: flipInY 1s forwards;
+    }
+}

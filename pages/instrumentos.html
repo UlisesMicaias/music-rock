@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
@@ -35,10 +41,10 @@
         <nav>
           <div class="contain-menu">
             <ul class="list-menu">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/pages/instrumentos.html">Instrumentos</a></li>
-              <li><a href="/pages/carrito.html">Compras</a></li>
-              <li><a href="/pages/contacto.html">Contacto</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./instrumentos.html">Instrumentos</a></li>
+              <li><a href="./carrito.html">Compras</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
             </ul>
           </div>
         </nav>
@@ -50,33 +56,53 @@
         <div class="btn-float">
           <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp" style="color: green;"></i></a>
         </div>
-        <section>
-          <div class="contain-tipos-instrumentos">
-            <h5><i class="fa fa-list"></i> TIPOS DE INSTRUMENTOS:</h2>
-              <div class="list-tipos">
-                <div class="item-tipos">
-                  <p>ELÉCTRICOS</p>
-                </div>
-                <div class="item-tipos">
-                  <p>ACÚSTICOS</p>
-                </div>
-                <div class="item-tipos">
-                  <p>ELECTROACÚSTICOS</p>
-                </div>
-                <div class="item-tipos">
-                  <p>OTROS...</p>
-                </div>
-              </div>
+        <aside>
+          <div class="contain-informacion-instrumentos">
+            <h5>INFORMACIÓN</h5>
+            <div class="dropdown">
+              <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                marcas
+              </p>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><p class="dropdown-item">PEARL</p></li>
+                <li><p class="dropdown-item">YAMAHA</p></li>
+                <li><p class="dropdown-item">MAPEX</p></li>
+                <li><p class="dropdown-item">LUDWIG</p></li>
+                <li><p class="dropdown-item">SONOR</p></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                colores
+              </p>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><p class="dropdown-item">rojo</p></li>
+                <li><p class="dropdown-item">verde</p></li>
+                <li><p class="dropdown-item">negro</p></li>
+                <li><p class="dropdown-item">blanco</p></li>
+                <li><p class="dropdown-item">azul</p></li>
+                <li><p class="dropdown-item">otro</p></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                tipos
+              </p>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><p class="dropdown-item">eléctricos</p></li>
+                <li><p class="dropdown-item">criollos</p></li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </aside>
 
         <div class="contain-logo-instrumentos">
           <div class="section-guitarras">
             <div class="item-guitarra">
-              <img src="/assets/logos-instrumentos/guitarras-instrumentos-page.jpg" alt="">
+              <img src="../assets/logos-instrumentos/guitarras-instrumentos-page.jpg" alt="">
             </div>
             <div class="btns-instrumentos">
-              <button type="button" class="btn btn-dark"><a href="/pages/guitarras.html">GUITARRAS</a></button>
+              <button type="button" class="btn btn-dark"><a href="./guitarras.html">GUITARRAS</a></button>
             </div>
           </div>
         </section>
@@ -84,10 +110,10 @@
         <section>
           <div class="section-bajos">
             <div class="item-bajo">
-              <img src="/assets/logos-instrumentos/bajos-instrumentos-page.jpg" alt="">
+              <img src="../assets/logos-instrumentos/bajos-instrumentos-page.jpg" alt="">
             </div>
             <div class="btns-instrumentos">
-              <button type="button" class="btn btn-dark"><a href="/pages/bajos.html">BAJOS</a></button>
+              <button type="button" class="btn btn-dark"><a href="./bajos.html">BAJOS</a></button>
             </div>
           </div>
         </section>
@@ -95,10 +121,10 @@
         <section>
           <div class="section-baterias">
             <div class="item-bateria">
-              <img src="/assets/logos-instrumentos/baterias-instrumentos-page.jpg" alt="">
+              <img src="../assets/logos-instrumentos/baterias-instrumentos-page.jpg" alt="">
             </div>
             <div class="btns-instrumentos">
-              <button type="button" class="btn btn-dark"><a href="/pages/baterías.html">BATERÍAS</a></button>
+              <button type="button" class="btn btn-dark"><a href="./baterías.html">BATERÍAS</a></button>
             </div>
           </div>
         </section>
@@ -107,14 +133,14 @@
         <aside>
           <div class="contain-aside">
             <div class="publicidad">
-              <img src="/assets/publicidad-instrumentos-aside (1).jpeg" alt="">
+              <img src="../assets/publicidad-instrumentos-aside (1).jpeg" alt="">
             </div>
           </div>
         </aside>
         <section>
           <div class="btns-instrumentos">
             <div class="compras">
-              <button type="button" class="btn btn-dark"><a href="/pages/carrito.html">COMPRAS</a></button>
+              <button type="button" class="btn btn-dark"><a href="./carrito.html">COMPRAS</a></button>
             </div>
           </div>
         </section>
@@ -164,5 +190,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
