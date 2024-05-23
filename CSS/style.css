@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   color: gainsboro;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -226,7 +224,6 @@ body {
   margin: 20px;
 }
 
-/* RESPONSIVE INDEX */
 @media screen and (max-width: 320px) and (max-width: 480px) {
   header, footer {
     flex-direction: column;
@@ -235,7 +232,6 @@ body {
   .contain-menu ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
   .contain-menu ul li {
     margin-bottom: 20px;
@@ -354,6 +350,23 @@ body {
   .items-bandas img {
     max-width: 100%;
     padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 320px) and (max-width: 480px) {
+  .contain-main-somos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .article-casa {
+    margin: 10px;
+  }
+  .items-casa {
+    padding-top: 10px;
+  }
+  .items-casa img,
+  .items-casa iframe {
+    width: 100%;
     height: auto;
   }
 }

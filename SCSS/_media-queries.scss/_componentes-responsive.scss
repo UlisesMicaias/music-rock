@@ -1,18 +1,15 @@
 @import '../primary/variables';
 @import '../primary/mixins';
 
-/* RESPONSIVE INDEX */
-
+//HEADER Y FOOTER RESPONSIVE//
 @media screen and (max-width: 320px) and (max-width: 480px) {
     header, footer {
         flex-direction: column;
         width: 100%;
     }
-
     .contain-menu ul {
         display: flex;
         flex-direction: column;
-        width: 100%;
         li {
             margin-bottom: $base-margin;
             text-align: center;
@@ -36,21 +33,3 @@
         width: 100%;
     }  
 }
-
-
-
-        // @media screen and (max-width: 480px){
-        //     header, footer {
-        //         flex-direction: column;
-        //         width: 100%;
-        //     }
-        
-        //     .list-menu {
-        //         display: flex;
-        //         flex-direction: column;
-        //         li {
-        //             margin-bottom: $base-margin;
-        //             text-align: center;
-        //         }
-        //     }
-        // }
