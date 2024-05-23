@@ -4,6 +4,7 @@
 .contain-header {
     background-image: $background-gradient;
     padding: $header-padding;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +20,7 @@
 
 .list-menu {
     li {
-        margin-right: $base-margin;
+        padding-right: 20px;
     }
 
     li,
