@@ -13,11 +13,17 @@
 @import './pages-style/content-instrumentos';
 @import './pages-style/content-somos';
 @import'./pages-style/content-carrito';
+@import'./pages-style/content-contacto';
 
 // mediaqueries para las paginas responsive
 @import './_media-queries.scss/componentes-responsive';
 @import './_media-queries.scss/index-responsive';
 @import './_media-queries.scss/somos-responsive';
+@import './_media-queries.scss/instrumentos-responsive';
+@import './_media-queries.scss/carrito-responsive';
+@import './_media-queries.scss/contacto-responsive';
+@import'./_media-queries.scss/instrumentos-individuales-responsive';
+
 
 //animaciones de las paginas
 @import './animate/animate-nav';

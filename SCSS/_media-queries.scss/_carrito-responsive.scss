@@ -1,0 +1,36 @@
+@import '../primary/variables';
+@import '../primary/mixins';
+
+//RESPONSIVE CARRITO.HTML
+@media screen and (max-width: 320px) {
+    .card {
+        margin: 20px;
+    }
+
+    .contain-main-instrumentos-comprados {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 20px;
+    }
+
+    .contain-main-instrumentos-comprados {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card {
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 918px){
+    .card {
+        margin: 20px;
+    }
+}

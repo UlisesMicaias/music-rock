@@ -225,6 +225,29 @@ body {
   margin: 20px;
 }
 
+.container-form {
+  background-color: #470000;
+  padding: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 10px 15px rgba(0, 0, 0, 0.747);
+}
+.container-form label {
+  color: black;
+}
+.container-form .title-contact-form {
+  text-align: center;
+}
+.container-form .btn-contact {
+  text-align: center;
+}
+.container-form .btn-contact .btn-contact-form {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media screen and (max-width: 320px) {
   .contain-header {
     display: flex;
@@ -414,6 +437,137 @@ body {
   .items-casa iframe {
     width: 100%;
     height: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contain-main-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-logo-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-aside {
+    display: none;
+  }
+  .item-guitarra img,
+  .item-bateria img,
+  .item-bajo img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contain-main-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-logo-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-aside {
+    display: none;
+  }
+  .item-guitarra img,
+  .item-bateria img,
+  .item-bajo img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contain-main-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-logo-instrumentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-aside {
+    display: none;
+  }
+  .item-guitarra img,
+  .item-bateria img,
+  .item-bajo img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contain-main-instrumentos {
+    display: block;
+  }
+  .contain-aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contain-main-instrumentos {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tipos" "logos" "publicidad";
+  }
+  .contain-main-instrumentos .publicidad img {
+    padding: 0;
+    background-color: none !important;
+  }
+  .contain-main-instrumentos .contain-header, .contain-main-instrumentos .contain-footer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card {
+    margin: 20px;
+  }
+  .contain-main-instrumentos-comprados {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    margin: 20px;
+  }
+  .contain-main-instrumentos-comprados {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 918px) {
+  .card {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contain-main-instrumentos-especifico {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-main-instrumentos-especifico .contain-img-instrumentos {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contain-main-instrumentos-especifico {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-main-instrumentos-especifico .contain-img-instrumentos {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contain-all {
+    display: grid;
   }
 }
 .contain-menu ul.list-menu li:hover {
