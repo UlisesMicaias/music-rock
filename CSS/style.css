@@ -566,8 +566,23 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .contain-all {
-    display: grid;
+  .contain-main-instrumentos-especifico {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-main-instrumentos-especifico .contain-img-instrumentos {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contain-main-instrumentos-especifico {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-main-instrumentos-especifico .contain-img-instrumentos {
+    grid-template-columns: 1fr;
+    margin: 0;
   }
 }
 .contain-menu ul.list-menu li:hover {

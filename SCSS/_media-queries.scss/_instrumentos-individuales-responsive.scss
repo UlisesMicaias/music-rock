@@ -27,8 +27,29 @@
 
 }
 
-@media screen  and (max-width: 768px){
-    .contain-all{
-        display: grid;
-    }
+
+@media screen and (max-width: 768px) {
+    .contain-main-instrumentos-especifico {
+        display: flex;
+        flex-direction: column;
+
+        .contain-img-instrumentos {
+            grid-template-columns: 1fr; 
+            margin: 0; 
+        }
+    } 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contain-main-instrumentos-especifico {
+        display: flex;
+        flex-direction: column;
+
+        .contain-img-instrumentos {
+            grid-template-columns: 1fr; 
+            margin: 0; 
+        }
+    } 
+
 }
