@@ -227,98 +227,150 @@ body {
 }
 
 /* RESPONSIVE INDEX */
-@media (max-width: 320px) {
-  header {
+@media screen and (max-width: 320px) and (max-width: 480px) {
+  header, footer {
     flex-direction: column;
     width: 100%;
   }
-  .list-menu {
+  .contain-menu ul {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .list-menu li {
+  .contain-menu ul li {
     margin-bottom: 20px;
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .contain-header {
-    flex-direction: column;
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  header, footer {
     width: 100%;
   }
-  .list-menu {
-    display: flex;
-    flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  header, footer {
+    width: 100%;
   }
-  .list-menu li {
+}
+@media screen and (max-width: 1200px) {
+  header, footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .boton-float {
+    display: block;
+  }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .boton-float {
+    display: block;
+  }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .boton-float {
+    display: block;
+  }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .boton-float {
+    display: block;
+  }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .boton-float {
+    display: block;
+  }
+  .section-instruments,
+  .section-marcas,
+  .section-bandas {
+    margin: 20px;
+  }
+  .list-marcas,
+  .list-bandas {
+    grid-template-columns: 1fr;
+  }
+  .items-marcas img,
+  .items-bandas img {
+    max-width: 100%;
+    padding-right: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 320px) and (max-width: 480px) {
+  main {
+    margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
   }
-}
-@media (max-width: 768px) {
-  header {
+  .article-casa {
+    margin: 10px;
+  }
+  .items-casa {
+    padding-top: 10px;
+  }
+  .items-casa img,
+  .items-casa iframe {
     width: 100%;
-  }
-  .boton-float {
-    display: block;
-  }
-  .section-instruments,
-  .section-marcas,
-  .section-bandas {
-    margin: 20px;
-  }
-  .list-marcas,
-  .list-bandas {
-    grid-template-columns: 1fr;
-  }
-  .items-marcas img,
-  .items-bandas img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 1024px) {
-  header {
-    width: 100%;
-  }
-  .boton-float {
-    display: block;
-  }
-  .section-instruments,
-  .section-marcas,
-  .section-bandas {
-    margin: 20px;
-  }
-  .list-marcas,
-  .list-bandas {
-    grid-template-columns: 1fr;
-  }
-  .items-marcas img,
-  .items-bandas img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 1200px) {
-  header {
-    width: 100%;
-  }
-  .boton-float {
-    display: block;
-  }
-  .section-instruments,
-  .section-marcas,
-  .section-bandas {
-    margin: 20px;
-  }
-  .list-marcas,
-  .list-bandas {
-    grid-template-columns: 1fr;
-  }
-  .items-marcas img,
-  .items-bandas img {
-    max-width: 100%;
     height: auto;
   }
 }

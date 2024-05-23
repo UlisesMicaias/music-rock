@@ -1,0 +1,108 @@
+@import '../primary/variables';
+@import '../primary/mixins';
+
+
+@media screen and (max-width: 320px) {
+    .boton-float {
+        display: block;
+    }
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+    
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .boton-float {
+        display: block;
+    }
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+    
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boton-float {
+        display: block;
+    }
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+    
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .boton-float {
+        display: block;
+    }
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+    
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .boton-float {
+        display: block;
+    }
+    .section-instruments,
+    .section-marcas,
+    .section-bandas {
+        margin: $base-margin;
+    }
+    
+    .list-marcas,
+    .list-bandas {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-marcas img,
+    .items-bandas img {
+        @include responsive-img;
+    }
+}

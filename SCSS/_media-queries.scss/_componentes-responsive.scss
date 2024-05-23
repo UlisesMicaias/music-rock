@@ -3,13 +3,13 @@
 
 /* RESPONSIVE INDEX */
 
-@media (max-width: 320px) {
-    header {
+@media screen and (max-width: 320px) and (max-width: 480px) {
+    header, footer {
         flex-direction: column;
         width: 100%;
     }
 
-    .list-menu {
+    .contain-menu ul {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -20,92 +20,37 @@
     }
 }
 
-@media (max-width: 480px){
-    .contain-header {
-        flex-direction: column;
+@media screen and (min-width: 768px) and (max-width: 980px){
+    header, footer{
         width: 100%;
     }
-
-    .list-menu {
-        display: flex;
-        flex-direction: column;
-        li {
-            margin-bottom: $base-margin;
-            text-align: center;
-        }
+}
+@media screen and (max-width: 1024px) {
+    header, footer{
+        width: 100%;
     }
 }
 
-
-@media (max-width: 768px) {
-    header{
+@media screen and (max-width: 1200px) {
+    header, footer{
         width: 100%;
-    }
-    .boton-float {
-        display: block;
-    }
-    .section-instruments,
-    .section-marcas,
-    .section-bandas {
-        margin: $base-margin;
-    }
-
-    .list-marcas,
-    .list-bandas {
-        grid-template-columns: 1fr;
-    }
-
-    .items-marcas img,
-    .items-bandas img {
-        @include responsive-img;
-    }
-}
-@media (max-width: 1024px) {
-    header{
-        width: 100%;
-    }
-    .boton-float {
-        display: block;
-    }
-    .section-instruments,
-    .section-marcas,
-    .section-bandas {
-        margin: $base-margin;
-    }
-
-    .list-marcas,
-    .list-bandas {
-        grid-template-columns: 1fr;
-    }
-
-    .items-marcas img,
-    .items-bandas img {
-        @include responsive-img;
-    }
-}
-
-@media (max-width: 1200px) {
-    header{
-        width: 100%;
-    }
-    .boton-float {
-        display: block;
-    }
-    .section-instruments,
-    .section-marcas,
-    .section-bandas {
-        margin: $base-margin;
-    }
-
-    .list-marcas,
-    .list-bandas {
-        grid-template-columns: 1fr;
-    }
-
-    .items-marcas img,
-    .items-bandas img {
-        @include responsive-img;
-    }
+    }  
 }
 
 
+
+        // @media screen and (max-width: 480px){
+        //     header, footer {
+        //         flex-direction: column;
+        //         width: 100%;
+        //     }
+        
+        //     .list-menu {
+        //         display: flex;
+        //         flex-direction: column;
+        //         li {
+        //             margin-bottom: $base-margin;
+        //             text-align: center;
+        //         }
+        //     }
+        // }
