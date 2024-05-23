@@ -2,18 +2,60 @@
 @import '../primary/mixins';
 
 //HEADER Y FOOTER RESPONSIVE//
-@media screen and (max-width: 320px) and (max-width: 480px) {
-    header, footer {
+@media screen and (max-width: 320px){
+    .contain-header {
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
+
+    .contain-menu ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .contain-menu ul li {
+        margin-bottom: $base-margin;
+        text-align: center;
+    }
+
+    .list-casa {
+        grid-template-columns: 1fr;
+    }
+
+    .items-casa img,
+    .items-casa iframe {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contain-header {
+        padding: 0; /* Ajusta el padding del header y el footer */
+        flex-direction: column; /* Asegura que el header y footer se dispongan en columna */
+        width: 100%;
+    }
+
     .contain-menu ul {
         display: flex;
         flex-direction: column;
-        li {
-            margin-bottom: $base-margin;
-            text-align: center;
-        }
+        align-items: center; /* Centra los elementos del menú */
+    }
+
+    .contain-menu ul li {
+        margin-bottom: $base-margin;
+        text-align: center;
+    }
+
+    .list-casa {
+        grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    }
+
+    .items-casa img,
+    .items-casa iframe {
+        width: 100%;
+        height: auto; /* Asegura que las imágenes y iframes sean responsivos */
     }
 }
 
@@ -22,11 +64,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 1024px) {
-    header, footer{
-        width: 100%;
-    }
-}
+
 
 @media screen and (max-width: 1200px) {
     header, footer{

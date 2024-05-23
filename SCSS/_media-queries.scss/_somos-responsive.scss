@@ -17,4 +17,25 @@
         width: 100%;
         height: auto;
     }
+} 
+
+@media screen and (max-width: 768px){
+    .contain-main-somos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .article-casa{
+        margin: 10px;
+    }
+    .items-casa{
+        padding-top: 10px;
+    }
+    .items-casa img,
+    .items-casa iframe {
+        width: 100%;
+        height: auto;
+    }
 }
+
+
+
