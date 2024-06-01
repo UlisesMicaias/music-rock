@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de bajos. Todos los tipos de bajos acústicos y eléctricos que vas a poder encontrar.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Página de bajos. Todos los tipos de bajos acústicos y eléctricos que vas a poder encontrar.">
     <meta name="keywords" content="BAJOS, CASA DE MÚSICA, MUSICA, ROCK, BANDA DE ROCK">
     <link rel="stylesheet" href="../CSS/style.css"/>
     <link rel="shortcut icon" href="../assets/favicon.jpg" type="image/x-icon">
@@ -21,11 +22,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Music Rock</title>
-</head>
 
+  <title>Music Rock</title>
+</head>
 <body>
-<div class="contain-all">
   <header>
     <div class="contain-header">
       <div class="logo-page">
@@ -35,9 +35,9 @@
         <div class="contain-menu">
           <ul class="list-menu">
           <li><a href="./somos.html">Somos</a></li>
-          <li><a href=".instrumentos.html">Instrumentos</a></li>
-          <li><a href=".carrito.html">Compras</a></li>
-          <li><a href=".contacto.html">Contacto</a></li>
+          <li><a href="./instrumentos.html">Instrumentos</a></li>
+          <li><a href="./carrito.html">Compras</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
           </ul>
         </div>
       </nav>
@@ -45,158 +45,174 @@
   </header>
 
   <main>
-    <div class="contain-main-instrumentos-especifico">
-      <div class="btn-float">
-          <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp" style="color: green;"></i></a>
-        </div>
-      <aside>
-        <div class="contain-informacion-instrumentos">
+    <div class="contain-instrumentos-especifico">
+      <div class="row">
+        <div class="col-md-3 contain-instrumentos-informacion">
           <h5>INFORMACIÓN</h5>
-          <div class="dropdown">
-            <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              marcas
+          <div class="dropdown mb-2">
+            <p class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Marcas
             </p>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><p class="dropdown-item">IBANEZ</p></li>
-              <li><p class="dropdown-item">CORT</p></li>
               <li><p class="dropdown-item">FENDER</p></li>
+              <li><p class="dropdown-item">GIBSON</p></li>
+              <li><p class="dropdown-item">SQUIER</p></li>
+              <li><p class="dropdown-item">IBANEZ</p></li>
               <li><p class="dropdown-item">YAMAHA</p></li>
-              <li><p class="dropdown-item">JACKSON</p></li>
+            </ul>
+          </div>
+          <div class="dropdown mb-2">
+            <p class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Colores
+            </p>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><p class="dropdown-item">Rojo</p></li>
+              <li><p class="dropdown-item">Verde</p></li>
+              <li><p class="dropdown-item">Negro</p></li>
+              <li><p class="dropdown-item">Blanco</p></li>
+              <li><p class="dropdown-item">Azul</p></li>
+              <li><p class="dropdown-item">Otro</p></li>
             </ul>
           </div>
           <div class="dropdown">
-            <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              colores
+            <p class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Tipos
             </p>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><p class="dropdown-item">rojo</p></li>
-              <li><p class="dropdown-item">verde</p></li>
-              <li><p class="dropdown-item">negro</p></li>
-              <li><p class="dropdown-item">blanco</p></li>
-              <li><p class="dropdown-item">azul</p></li>
-              <li><p class="dropdown-item">otro</p></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <p class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              tipos
-            </p>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><p class="dropdown-item">eléctricos</p></li>
-              <li><p class="dropdown-item">criollos</p></li>
-              <li><p class="dropdown-item">electroacústicos</p></li>
+              <li><p class="dropdown-item">Eléctricos</p></li>
+              <li><p class="dropdown-item">Criollos</p></li>
             </ul>
           </div>
         </div>
-      </aside>
-
-      <div class="contain-img-instrumentos">
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/fender-precision-bass-black.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">FENDER PRECISION BASS BLACK</h5>
-            <p class="card-text">$3.786.890</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/warwick-pro-series-streamer-stageI4.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">WARWICK PRO SERIES STREAMER STAGE</h5>
-            <p class="card-text">$5.000.600</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/gibson-1967-eb2.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">GIBSON 1967 EB2</h5>
-            <p class="card-text">$1.320.578</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/ibanez-sr379ef-bbt.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">IBANEZ SR379EF BBT</h5>
-            <p class="card-text">2.500.000</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/marcus-miller-mm128.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">MARCUS MILLER MM128</h5>
-            <p class="card-text">$2.500.000</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/music-man-stingray.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">MUSIC MAN STRING RAY</h5>
-            <p class="card-text">$3.897.000</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/rickenbacker-4003.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">RICKENBACKER 4003</h5>
-            <p class="card-text">$5.000.560</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/squier-classic-vibe-jazz-bass.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">SQUIER CLASSIC VIBE JAZZ BASS</h5>
-            <p class="card-text">$2.800.000</p>
-            <a href="#" class="btn">AÑADIR</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/assets/bajos/yamaha-bb-series.jpg" class="card-img-top" alt="bajos">
-          <div class="card-body">
-            <h5 class="card-title">YAMAHA BB SERIES WHITE</h5>
-            <p class="card-text">$4.000.870</p>
-            <a href="./carrito.html" class="btn">AÑADIR</a>
+        <div class="col-md-9">
+          <div class="row contain-img-instrumentos">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/fender-precision-bass-black.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">FENDER PRECISION SERIE</h5>
+                  <p class="card-text">$1.890.780</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/gibson-1967-eb2.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">GIBSON 1967 EB-2</h5>
+                  <p class="card-text">$1.800.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/ibanez-sr379ef-bbt.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">IBANEZ SR379 BBT</h5>
+                  <p class="card-text">$1.400.768</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/marcus-miller-mm128.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">MARCUS MILLER MM128</h5>
+                  <p class="card-text">$2.000.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/music-man-stingray.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">MUSIC MAN STRINGRAY</h5>
+                  <p class="card-text">$1.000.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/rickenbacker-4003.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">RICKENBACKER 4003</h5>
+                  <p class="card-text">$950.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/squier-classic-vibe-jazz-bass.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">SQUIER CLASSIC VIBE JAZZ</h5>
+                  <p class="card-text">$3.500.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/warwick-pro-series-streamer-stageI4.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">STREAMER STAGE L4 PRO</h5>
+                  <p class="card-text">$2.000.768</p>
+                  <a href="#" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="../assets/bajos/yamaha-bb-series.jpg" class="card-img-top" alt="bajos">
+                <div class="card-body">
+                  <h5 class="card-title">YAMAHA BB SERIES</h5>
+                  <p class="card-text">$800.000</p>
+                  <a href="./carrito.html" class="btn btn-dark">AÑADIR</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </main>
+  
 
   <footer>
     <div class="contain-footer">
-      <div class="contact">
-        <ul>
-          <li>Nosotros</li>
-          <li>correo@gmail.com</li>
-          <li>número de telefono</li>
-          <li>ubicación en el mapa</li>
-          <li>Horario de atención: lun-vie 8hs a 12hs y 16hs a 21hs</li>
-        </ul>
-      </div>
-      <div class="questions">
-        <ul>
-          <li>Información legal y preguntas</li>
-          <li>Métodos de pago</li>
-          <li>Envíos</li>
-        </ul>
-      </div>
-      <div class="social-media">
-          <ul>
-              <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
-              <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
-              <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp" style="color: #ffffff;"></i></a></li>
-          </ul>
+        <div class="contact">
+            <ul>
+            <li>Nosotros</li>
+            <li>correo@gmail.com</li>
+            <li>número de telefono</li>
+            <li>ubicación en el mapa</li>
+            <li>Horario de atención: lun-vie 8hs a 12hs y 16hs a 21hs</li>
+            </ul>
         </div>
-        <p>2024 Tienda de Instrumentos Musicales. Todos los derechos reservados.</p>
+    <div class="questions">
+        <ul>
+            <li>Información legal y preguntas</li>
+            <li>Métodos de pago</li>
+            <li>Envíos</li>
+        </ul>
+    </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp" style="color: #ffffff;"></i></a></li>
+            </ul>
+            <p>2024 Tienda de Instrumentos Musicales. Todos los derechos reservados.</p>
+        </div>
     </div>
   </footer>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

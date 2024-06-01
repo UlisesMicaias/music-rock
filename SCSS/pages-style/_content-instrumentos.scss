@@ -52,52 +52,44 @@
 }
 
 /* MAIN DE CADA INSTRUMENTO */
-.contain-main-instrumentos-especifico {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-        "informacion cards cards"
-        "informacion cards cards"
-        "informacion cards cards";
+.contain-instrumentos-especifico{
+    margin: 20px;
 
-    .contain-informacion-instrumentos {
+    .contain-instrumentos-informacion{
         background-color: $color-secundary;
-        padding: $base-padding;
-        margin-top: 20px;
-        grid-area: informacion;
+        padding: 15px;
+        height: 180px;
+        width: 180px;
     }
 
-    .contain-img-instrumentos {
-        display: grid;
-        margin: $base-margin;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-area: cards;
+    .contain-img-instrumentos{
+        margin-left: 50px;
+    }
 
-        .card-img-top {
-            height: 180px;
-            object-fit: contain;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
-        }
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+}
 
-        .card-body {
-            a {
-                background-color: $btn-background-color;
-                text-decoration: none;
-                color: $text-color; 
+.card-body {
+    a {
+        background-color: $btn-background-color;
+        text-decoration: none;
+        color: $text-color; 
+        height: 100%;
 
-                &:hover {
-                    background-color: darken($btn-background-color, 10%);
-                    text-decoration: none; 
+        &:hover {
+            background-color: darken($btn-background-color, 10%);
+            text-decoration: none; 
                 }
-            }
+        }
 
             .card-title,
             .card-text {
                 color: black;
             }
         }
-    }
 }
 
 

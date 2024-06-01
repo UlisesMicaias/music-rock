@@ -139,40 +139,35 @@ body {
 }
 
 /* MAIN DE CADA INSTRUMENTO */
-.contain-main-instrumentos-especifico {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "informacion cards cards" "informacion cards cards" "informacion cards cards";
-}
-.contain-main-instrumentos-especifico .contain-informacion-instrumentos {
-  background-color: #470000;
-  padding: 10px;
-  margin-top: 20px;
-  grid-area: informacion;
-}
-.contain-main-instrumentos-especifico .contain-img-instrumentos {
-  display: grid;
+.contain-instrumentos-especifico {
   margin: 20px;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-area: cards;
 }
-.contain-main-instrumentos-especifico .contain-img-instrumentos .card-img-top {
+.contain-instrumentos-especifico .contain-instrumentos-informacion {
+  background-color: #470000;
+  padding: 15px;
+  height: 180px;
+  width: 180px;
+}
+.contain-instrumentos-especifico .contain-img-instrumentos {
+  margin-left: 50px;
+}
+.contain-instrumentos-especifico .card-img-top {
   height: 180px;
   object-fit: contain;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
 }
-.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body a {
+.contain-instrumentos-especifico .card-body a {
   background-color: #470000;
   text-decoration: none;
   color: gainsboro;
+  height: 100%;
 }
-.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body a:hover {
+.contain-instrumentos-especifico .card-body a:hover {
   background-color: #140000;
   text-decoration: none;
 }
-.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-title,
-.contain-main-instrumentos-especifico .contain-img-instrumentos .card-body .card-text {
+.contain-instrumentos-especifico .card-body .card-title,
+.contain-instrumentos-especifico .card-body .card-text {
   color: black;
 }
 
@@ -543,46 +538,6 @@ body {
 @media screen and (max-width: 918px) {
   .card {
     margin: 20px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .contain-main-instrumentos-especifico {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-main-instrumentos-especifico .contain-img-instrumentos {
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .contain-main-instrumentos-especifico {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-main-instrumentos-especifico .contain-img-instrumentos {
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contain-main-instrumentos-especifico {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-main-instrumentos-especifico .contain-img-instrumentos {
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .contain-main-instrumentos-especifico {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-main-instrumentos-especifico .contain-img-instrumentos {
-    grid-template-columns: 1fr;
-    margin: 0;
   }
 }
 .contain-menu ul.list-menu li:hover {
