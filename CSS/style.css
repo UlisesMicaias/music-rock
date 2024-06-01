@@ -95,47 +95,27 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* MAIN DE INSTRUMENTOS */
+/* MAIN DE INSTRUMENTOS PRINCIPAL */
 .contain-main-instrumentos {
-  display: grid;
-  margin-top: 15px;
-  gap: 20px;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "tipos logos publicidad" "tipos logos publicidad" "tipos logos publicidad";
-}
-.contain-main-instrumentos .contain-tipos-instrumentos {
-  background-color: #470000;
-  padding: 10px;
-  grid-area: tipos;
-}
-.contain-main-instrumentos .contain-logo-instrumentos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  gap: 15px;
-  grid-area: logos;
-}
-.contain-main-instrumentos .contain-aside {
-  background-color: #470000;
-  margin-right: 5px;
-  grid-area: publicidad;
-}
-.contain-main-instrumentos .item-guitarra img:hover,
-.contain-main-instrumentos .item-bateria img:hover,
-.contain-main-instrumentos .item-bajo img:hover {
-  border-radius: 20px;
-  transition: transform 0.3s;
-  transform: scale(0.8);
-}
-.contain-main-instrumentos .btns-instrumentos {
-  text-align: center;
   margin: 20px;
 }
-.contain-main-instrumentos .btns-instrumentos a {
-  text-decoration: none;
-  color: gainsboro;
+.contain-main-instrumentos .contain-instrumentos-informacion {
+  background-color: #470000;
+  padding: 15px;
+  margin-bottom: 20px;
+  height: 180px;
+  width: 180px;
+}
+.contain-main-instrumentos .img-logos-instrumentos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10%;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.705);
+}
+.contain-main-instrumentos .btn-logos {
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* MAIN DE CADA INSTRUMENTO */
@@ -432,84 +412,6 @@ body {
   .items-casa iframe {
     width: 100%;
     height: auto;
-  }
-}
-@media screen and (max-width: 320px) {
-  .contain-main-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-logo-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-aside {
-    display: none;
-  }
-  .item-guitarra img,
-  .item-bateria img,
-  .item-bajo img {
-    width: 200px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .contain-main-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-logo-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-aside {
-    display: none;
-  }
-  .item-guitarra img,
-  .item-bateria img,
-  .item-bajo img {
-    width: 200px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contain-main-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-logo-instrumentos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contain-aside {
-    display: none;
-  }
-  .item-guitarra img,
-  .item-bateria img,
-  .item-bajo img {
-    width: 200px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .contain-main-instrumentos {
-    display: block;
-  }
-  .contain-aside {
-    display: none;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contain-main-instrumentos {
-    grid-template-columns: 1fr;
-    grid-template-areas: "tipos" "logos" "publicidad";
-  }
-  .contain-main-instrumentos .publicidad img {
-    padding: 0;
-    background-color: none !important;
-  }
-  .contain-main-instrumentos .contain-header, .contain-main-instrumentos .contain-footer {
-    max-width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
